@@ -1,0 +1,62 @@
+spring:
+  application:
+    name: case-intake
+  main:
+    banner-mode: off
+  jackson:
+    default-property-inclusion: non_null
+
+app:
+  # All other paths are resolved against this root. The backend runs from backend/, so the default is the repository root.
+  root: ..
+  catalog: case-intake-exercise/catalog/field_catalog.json
+  document-dirs:
+    - case-intake-exercise/documents
+    - case-intake-exercise/documents/stretch
+  out-dir: out
+  fixtures-dir: fixtures
+  reviews-dir: reviews
+
+  llm:
+    # Switching provider is a configuration change: gemini | openai (any OpenAI-compatible chat completions endpoint).
+    provider: gemini
+    providers:
+      gemini:
+        base-url: https://generativelanguage.googleapis.com/v1beta
+        model: gemini-3.5-flash-lite
+        api-key-env: GEMINI_API_KEY
+        # Unset: Gemini 3 models are tuned for their default temperature; replay gives the determinism.
+        temperature:
+        # Optional Gemini 3 thinking level (low | high). Unset: the model decides.
+        thinking-level:
+      openai:
+        base-url: https://api.openai.com/v1
+        model: gpt-4o-mini
+        api-key-env: OPENAI_API_KEY
+        temperature: 0
+    requests-per-minute: 8
+    max-attempts: 6
+    initial-backoff: 5s
+    max-backoff: 90s
+    # Gemini answers only when the whole structured answer is generated, thinking included.
+    timeout: 600s
+
+  pipeline:
+    # app.pipeline.command is deliberately absent here: without it the app serves the API. Pass
+    # --app.pipeline.command=extract (call the model, record fixtures) or =replay (rebuild out/ from fixtures, offline).
+    # In extract mode, documents that already have a successful recording are not sent again (resume after quota exhaustion).
+    skip-recorded: true
+    max-document-chars: 60000
+    # Document-level flag codes the model may emit; anything else it reports goes into flags as a free-text note.
+    recommended-flags: [no_adverse_event, multiple_patients, unsupported_format, possible_duplicate]
+    # Option codes that must stand alone in a coded_multi value.
+    exclusive-option-codes: [none]
+
+  duplicates:
+    min-comparable-fields: 6
+    # Two reporters of one case still disagree on judgement fields (onset, seriousness); unrelated cases that share a
+    # drug and reaction agree on about 60%. 0.75 sits between the two.
+    min-agreement: 0.75
+    high-confidence-agreement: 0.95
+    # Catalog sections that describe the report rather than the case; two reporters of one case naturally differ there.
+    ignored-sections: [report]

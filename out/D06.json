@@ -1,0 +1,7 @@
+{
+  "document_id" : "D06",
+  "catalog_version" : "1.0",
+  "model" : "gemini/gemini-3.5-flash-lite",
+  "flags" : [ "no_adverse_event", "The affected bottle was quarantined before dispensing, no patient received capsules, and no adverse reaction occurred.", "The document describes a product quality complaint with no patient exposure or adverse events." ],
+  "cases" : [ ]
+}

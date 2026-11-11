@@ -1,0 +1,7 @@
+{
+  "groups" : [ {
+    "document_ids" : [ "S01", "S02" ],
+    "confidence" : "medium",
+    "reason" : "S01 and S02 agree on 11 of 13 comparable case fields; differ on Reaction onset date, Seriousness."
+  } ]
+}

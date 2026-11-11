@@ -1,0 +1,203 @@
+{
+  "document_id" : "D05",
+  "catalog_version" : "1.0",
+  "model" : "gemini/gemini-3.5-flash-lite",
+  "flags" : [ "The document contains a conflict regarding the patient's age: Patient Details section states age is 54, while Clinical Narrative states 45-year-old. Age 54 was extracted with conflict status." ],
+  "cases" : [ {
+    "case_index" : 0,
+    "label" : "D.L.",
+    "fields" : {
+      "patient_initials" : {
+        "status" : "extracted",
+        "value" : "DL",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "Initials: D.L.",
+          "start" : 266,
+          "end" : 280,
+          "page" : 1
+        } ]
+      },
+      "patient_age_years" : {
+        "status" : "conflict",
+        "provenance" : [ {
+          "quote" : "Age: 54",
+          "start" : 281,
+          "end" : 288,
+          "page" : 1
+        }, {
+          "quote" : "This 45-year-old gentleman",
+          "start" : 751,
+          "end" : 777,
+          "page" : 2
+        } ],
+        "note" : "Document gives conflicting ages: 54 in Patient Details and 45 in Clinical Narrative."
+      },
+      "patient_sex" : {
+        "status" : "extracted",
+        "value" : "male",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "Sex: Male",
+          "start" : 289,
+          "end" : 298,
+          "page" : 1
+        } ]
+      },
+      "suspect_drug_name" : {
+        "status" : "extracted",
+        "value" : "clozapine",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "Clozapine 100 mg tablets.",
+          "start" : 362,
+          "end" : 387,
+          "page" : 1
+        } ]
+      },
+      "suspect_drug_dose_value" : {
+        "status" : "extracted",
+        "value" : 300,
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "Current dose 300 mg orally",
+          "start" : 388,
+          "end" : 414,
+          "page" : 1
+        } ]
+      },
+      "suspect_drug_dose_unit" : {
+        "status" : "extracted",
+        "value" : "mg",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "Current dose 300 mg orally",
+          "start" : 388,
+          "end" : 414,
+          "page" : 1
+        } ]
+      },
+      "suspect_drug_route" : {
+        "status" : "extracted",
+        "value" : "oral",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "Current dose 300 mg orally",
+          "start" : 388,
+          "end" : 414,
+          "page" : 1
+        } ]
+      },
+      "suspect_drug_start_date" : {
+        "status" : "extracted",
+        "value" : "2026-02-09",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "Date started: 9 February 2026",
+          "start" : 460,
+          "end" : 489,
+          "page" : 1
+        } ]
+      },
+      "event_terms" : {
+        "status" : "extracted",
+        "value" : [ "agranulocytosis", "neutropenic fever" ],
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "Agranulocytosis with neutropenic fever",
+          "start" : 1807,
+          "end" : 1845,
+          "page" : 3
+        } ]
+      },
+      "event_onset_date" : {
+        "status" : "extracted",
+        "value" : "2026-04-06",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "At the week 9 visit on 6 April 2026",
+          "start" : 1046,
+          "end" : 1081,
+          "page" : 2
+        } ]
+      },
+      "event_outcome" : {
+        "status" : "extracted",
+        "value" : "recovering",
+        "confidence" : "medium",
+        "provenance" : [ {
+          "quote" : "The patient remains an inpatient and is improving.",
+          "start" : 1645,
+          "end" : 1695,
+          "page" : 3
+        } ]
+      },
+      "seriousness_criteria" : {
+        "status" : "extracted",
+        "value" : [ "life_threatening", "hospitalization" ],
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "Life-threatening: Yes",
+          "start" : 1742,
+          "end" : 1763,
+          "page" : 3
+        }, {
+          "quote" : "Hospitalisation: Yes",
+          "start" : 1764,
+          "end" : 1784,
+          "page" : 3
+        } ]
+      },
+      "reporter_type" : {
+        "status" : "extracted",
+        "value" : "physician",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "Reporting clinician: Dr Owen Faulkner, Consultant Psychiatrist",
+          "start" : 186,
+          "end" : 248,
+          "page" : 1
+        } ]
+      },
+      "report_date" : {
+        "status" : "extracted",
+        "value" : "2026-04-11",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "Report date: 11 April 2026",
+          "start" : 159,
+          "end" : 185,
+          "page" : 1
+        } ]
+      },
+      "country" : {
+        "status" : "extracted",
+        "value" : "AU",
+        "confidence" : "medium",
+        "provenance" : [ {
+          "quote" : "Brisbane, Queensland, Australia",
+          "start" : 49,
+          "end" : 80,
+          "page" : 1
+        } ],
+        "note" : "Computed rather than stated; confidence capped at medium."
+      },
+      "concomitant_drugs" : {
+        "status" : "extracted",
+        "value" : [ "sodium valproate", "lorazepam" ],
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "Sodium valproate 500 mg orally twice daily (since 2021).",
+          "start" : 553,
+          "end" : 609,
+          "page" : 1
+        }, {
+          "quote" : "Lorazepam 1 mg orally at night as required.",
+          "start" : 610,
+          "end" : 653,
+          "page" : 1
+        } ]
+      }
+    }
+  } ]
+}

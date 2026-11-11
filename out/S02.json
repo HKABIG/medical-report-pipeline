@@ -1,0 +1,182 @@
+{
+  "document_id" : "S02",
+  "catalog_version" : "1.0",
+  "model" : "gemini/gemini-3.5-flash-lite",
+  "flags" : [ "possible_duplicate" ],
+  "cases" : [ {
+    "case_index" : 0,
+    "label" : "E.W.",
+    "fields" : {
+      "patient_initials" : {
+        "status" : "extracted",
+        "value" : "EW",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "initials E.W.",
+          "start" : 310,
+          "end" : 323
+        } ]
+      },
+      "patient_age_years" : {
+        "status" : "extracted",
+        "value" : 81,
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "81-year-old",
+          "start" : 282,
+          "end" : 293
+        } ]
+      },
+      "patient_sex" : {
+        "status" : "extracted",
+        "value" : "female",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "female patient",
+          "start" : 294,
+          "end" : 308
+        } ]
+      },
+      "suspect_drug_name" : {
+        "status" : "extracted",
+        "value" : "digoxin",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "digoxin",
+          "start" : 259,
+          "end" : 266
+        } ]
+      },
+      "suspect_drug_dose_value" : {
+        "status" : "extracted",
+        "value" : 0.25,
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "0.25",
+          "start" : 463,
+          "end" : 467
+        } ]
+      },
+      "suspect_drug_dose_unit" : {
+        "status" : "extracted",
+        "value" : "mg",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "0.25 mg",
+          "start" : 463,
+          "end" : 470
+        } ]
+      },
+      "suspect_drug_route" : {
+        "status" : "extracted",
+        "value" : "oral",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "orally",
+          "start" : 471,
+          "end" : 477
+        } ]
+      },
+      "suspect_drug_start_date" : {
+        "status" : "extracted",
+        "value" : "2026-01-05",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "5 January 2026",
+          "start" : 495,
+          "end" : 509
+        } ]
+      },
+      "event_terms" : {
+        "status" : "extracted",
+        "value" : [ "symptomatic bradycardia", "nausea", "dizziness", "general weakness", "second-degree atrioventricular block" ],
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "symptomatic bradycardia",
+          "start" : 395,
+          "end" : 418
+        }, {
+          "quote" : "nausea, dizziness and general weakness",
+          "start" : 641,
+          "end" : 679
+        }, {
+          "quote" : "second-degree atrioventricular block",
+          "start" : 738,
+          "end" : 774
+        } ]
+      },
+      "event_onset_date" : {
+        "status" : "extracted",
+        "value" : "2026-02-16",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "16 February 2026",
+          "start" : 373,
+          "end" : 389
+        } ],
+        "note" : "Onset date of the main admitting event (symptomatic bradycardia). Nausea, dizziness, and general weakness started around 13 February 2026."
+      },
+      "event_outcome" : {
+        "status" : "extracted",
+        "value" : "recovered",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "fully recovered",
+          "start" : 1154,
+          "end" : 1169
+        } ]
+      },
+      "seriousness_criteria" : {
+        "status" : "extracted",
+        "value" : [ "hospitalization" ],
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "admitted to our emergency department",
+          "start" : 333,
+          "end" : 369
+        } ]
+      },
+      "reporter_type" : {
+        "status" : "extracted",
+        "value" : "physician",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "Senior Consultant Cardiologist",
+          "start" : 1350,
+          "end" : 1380
+        } ]
+      },
+      "report_date" : {
+        "status" : "extracted",
+        "value" : "2026-02-24",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "24 February 2026",
+          "start" : 101,
+          "end" : 117
+        } ]
+      },
+      "country" : {
+        "status" : "extracted",
+        "value" : "DE",
+        "confidence" : "medium",
+        "provenance" : [ {
+          "quote" : "Germany",
+          "start" : 92,
+          "end" : 99
+        } ],
+        "note" : "Computed rather than stated; confidence capped at medium."
+      },
+      "concomitant_drugs" : {
+        "status" : "extracted",
+        "value" : [ "bisoprolol", "apixaban" ],
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "bisoprolol and apixaban",
+          "start" : 560,
+          "end" : 583
+        } ]
+      }
+    }
+  } ]
+}

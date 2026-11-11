@@ -1,0 +1,184 @@
+{
+  "document_id" : "D03",
+  "catalog_version" : "1.0",
+  "model" : "gemini/gemini-3.5-flash-lite",
+  "flags" : [ ],
+  "cases" : [ {
+    "case_index" : 0,
+    "label" : "Male, 45",
+    "fields" : {
+      "patient_initials" : {
+        "status" : "unknown",
+        "note" : "Initials withheld at the patient's request"
+      },
+      "patient_age_years" : {
+        "status" : "extracted",
+        "value" : 45,
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "Age: 45",
+          "start" : 305,
+          "end" : 312
+        } ]
+      },
+      "patient_sex" : {
+        "status" : "extracted",
+        "value" : "male",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "Sex: Male",
+          "start" : 313,
+          "end" : 322
+        } ]
+      },
+      "suspect_drug_name" : {
+        "status" : "extracted",
+        "value" : "ibuprofen",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "Ibuprofen",
+          "start" : 355,
+          "end" : 364
+        } ]
+      },
+      "suspect_drug_dose_value" : {
+        "status" : "extracted",
+        "value" : 400,
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "400 mg",
+          "start" : 365,
+          "end" : 371
+        } ]
+      },
+      "suspect_drug_dose_unit" : {
+        "status" : "extracted",
+        "value" : "mg",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "400 mg",
+          "start" : 365,
+          "end" : 371
+        } ]
+      },
+      "suspect_drug_route" : {
+        "status" : "extracted",
+        "value" : "oral",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "by mouth",
+          "start" : 392,
+          "end" : 400
+        } ]
+      },
+      "suspect_drug_start_date" : {
+        "status" : "extracted",
+        "value" : "2026-04-03",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "03/04/2026",
+          "start" : 490,
+          "end" : 500
+        } ]
+      },
+      "event_terms" : {
+        "status" : "extracted",
+        "value" : [ "melaena", "feeling faint", "upper gastrointestinal haemorrhage", "duodenal ulcer" ],
+        "confidence" : "medium",
+        "provenance" : [ {
+          "quote" : "passed black tarry stools",
+          "start" : 567,
+          "end" : 592
+        }, {
+          "quote" : "felt faint",
+          "start" : 597,
+          "end" : 607
+        }, {
+          "quote" : "upper gastrointestinal bleed",
+          "start" : 669,
+          "end" : 697
+        }, {
+          "quote" : "duodenal ulcer",
+          "start" : 705,
+          "end" : 719
+        } ],
+        "note" : "Terms mapped to standard clinical concepts."
+      },
+      "event_onset_date" : {
+        "status" : "extracted",
+        "value" : "2026-04-28",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "On 28/04/2026 the patient passed black tarry stools",
+          "start" : 541,
+          "end" : 592
+        } ]
+      },
+      "event_outcome" : {
+        "status" : "extracted",
+        "value" : "recovered",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "Recovered.",
+          "start" : 994,
+          "end" : 1004
+        } ]
+      },
+      "seriousness_criteria" : {
+        "status" : "extracted",
+        "value" : [ "hospitalization" ],
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "admitted for three nights",
+          "start" : 845,
+          "end" : 870
+        } ]
+      },
+      "reporter_type" : {
+        "status" : "extracted",
+        "value" : "nurse",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "Nurse Prescriber",
+          "start" : 41,
+          "end" : 57
+        }, {
+          "quote" : "Advanced Nurse Practitioner",
+          "start" : 199,
+          "end" : 226
+        } ]
+      },
+      "report_date" : {
+        "status" : "extracted",
+        "value" : "2026-05-15",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "15/05/2026",
+          "start" : 149,
+          "end" : 159
+        } ]
+      },
+      "country" : {
+        "status" : "extracted",
+        "value" : "GB",
+        "confidence" : "medium",
+        "provenance" : [ {
+          "quote" : "United Kingdom",
+          "start" : 115,
+          "end" : 129
+        } ],
+        "note" : "Derived ISO country code from United Kingdom Computed rather than stated; confidence capped at medium."
+      },
+      "concomitant_drugs" : {
+        "status" : "extracted",
+        "value" : [ ],
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "None. The patient does not take any regular medication",
+          "start" : 889,
+          "end" : 943
+        } ]
+      }
+    }
+  } ]
+}

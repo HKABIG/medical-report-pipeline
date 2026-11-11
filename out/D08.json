@@ -1,0 +1,266 @@
+{
+  "document_id" : "D08",
+  "catalog_version" : "1.0",
+  "model" : "gemini/gemini-3.5-flash-lite",
+  "flags" : [ ],
+  "cases" : [ {
+    "case_index" : 0,
+    "label" : "H.M.N.",
+    "fields" : {
+      "patient_initials" : {
+        "status" : "extracted",
+        "value" : "HMN",
+        "confidence" : "medium",
+        "provenance" : [ {
+          "quote" : "Initials: H.M.N.",
+          "start" : 717,
+          "end" : 733,
+          "page" : 1
+        } ],
+        "note" : "Dots removed from initials per formatting guidelines. Computed rather than stated; confidence capped at medium."
+      },
+      "patient_age_years" : {
+        "status" : "extracted",
+        "value" : 72,
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "age 72 years at the time of the events described below",
+          "start" : 767,
+          "end" : 821,
+          "page" : 1
+        } ]
+      },
+      "patient_sex" : {
+        "status" : "extracted",
+        "value" : "female",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "Sex: Female",
+          "start" : 734,
+          "end" : 745,
+          "page" : 1
+        } ]
+      },
+      "suspect_drug_name" : {
+        "status" : "extracted",
+        "value" : "methotrexate",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "Methotrexate 2.5 mg tablets (oral).",
+          "start" : 1832,
+          "end" : 1867,
+          "page" : 2
+        } ]
+      },
+      "suspect_drug_dose_value" : {
+        "status" : "extracted",
+        "value" : 20,
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "increased the dose of methotrexate to 20 mg orally once weekly",
+          "start" : 2482,
+          "end" : 2544,
+          "page" : 2
+        } ]
+      },
+      "suspect_drug_dose_unit" : {
+        "status" : "extracted",
+        "value" : "mg",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "increased the dose of methotrexate to 20 mg orally once weekly",
+          "start" : 2482,
+          "end" : 2544,
+          "page" : 2
+        } ]
+      },
+      "suspect_drug_route" : {
+        "status" : "extracted",
+        "value" : "oral",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "Methotrexate 2.5 mg tablets (oral).",
+          "start" : 1832,
+          "end" : 1867,
+          "page" : 2
+        } ]
+      },
+      "suspect_drug_start_date" : {
+        "status" : "extracted",
+        "value" : "2025-10-07",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "Methotrexate was started by the rheumatology service on 7 October 2025",
+          "start" : 1869,
+          "end" : 1939,
+          "page" : 2
+        } ]
+      },
+      "event_terms" : {
+        "status" : "extracted",
+        "value" : [ "bone marrow suppression", "mouth ulcers", "difficulty swallowing", "fatigue", "easy bruising", "pancytopenia", "oral mucositis", "neutropenic sepsis", "acute kidney injury", "pneumonia" ],
+        "confidence" : "medium",
+        "provenance" : [ {
+          "quote" : "severe bone marrow suppression",
+          "start" : 410,
+          "end" : 440,
+          "page" : 1
+        }, {
+          "quote" : "painful mouth ulcers",
+          "start" : 4002,
+          "end" : 4022,
+          "page" : 3
+        }, {
+          "quote" : "difficulty swallowing",
+          "start" : 4024,
+          "end" : 4045,
+          "page" : 3
+        }, {
+          "quote" : "fatigue",
+          "start" : 4047,
+          "end" : 4054,
+          "page" : 3
+        }, {
+          "quote" : "easy bruising on the forearms",
+          "start" : 4059,
+          "end" : 4088,
+          "page" : 3
+        }, {
+          "quote" : "pancytopenia",
+          "start" : 4881,
+          "end" : 4893,
+          "page" : 3
+        }, {
+          "quote" : "oral mucositis",
+          "start" : 4465,
+          "end" : 4479,
+          "page" : 3
+        }, {
+          "quote" : "neutropenic sepsis",
+          "start" : 5670,
+          "end" : 5688,
+          "page" : 3
+        }, {
+          "quote" : "acute-on-chronic kidney impairment",
+          "start" : 5758,
+          "end" : 5792,
+          "page" : 3
+        }, {
+          "quote" : "bilateral pneumonia",
+          "start" : 9433,
+          "end" : 9452,
+          "page" : 5
+        } ]
+      },
+      "event_onset_date" : {
+        "status" : "extracted",
+        "value" : "2026-03-19",
+        "confidence" : "medium",
+        "provenance" : [ {
+          "quote" : "five-day history of painful mouth ulcers",
+          "start" : 3982,
+          "end" : 4022,
+          "page" : 3
+        } ],
+        "note" : "Derived from presentation date 24 March 2026 minus 5 days."
+      },
+      "event_outcome" : {
+        "status" : "extracted",
+        "value" : "fatal",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "The patient died at 04:35 on 30 March 2026",
+          "start" : 10093,
+          "end" : 10135,
+          "page" : 6
+        } ]
+      },
+      "seriousness_criteria" : {
+        "status" : "extracted",
+        "value" : [ "death", "life_threatening", "hospitalization" ],
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "Death                          Yes",
+          "start" : 10535,
+          "end" : 10569,
+          "page" : 6
+        }, {
+          "quote" : "Life-threatening               Yes",
+          "start" : 10572,
+          "end" : 10606,
+          "page" : 6
+        }, {
+          "quote" : "Hospitalisation                Yes",
+          "start" : 10609,
+          "end" : 10643,
+          "page" : 6
+        } ]
+      },
+      "reporter_type" : {
+        "status" : "extracted",
+        "value" : "physician",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "Dr Priya Natarajan, Consultant Rheumatologist (reporting clinician)",
+          "start" : 12385,
+          "end" : 12452,
+          "page" : 7
+        } ]
+      },
+      "report_date" : {
+        "status" : "extracted",
+        "value" : "2026-04-14",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "Date of this report: 14 April 2026",
+          "start" : 12549,
+          "end" : 12583,
+          "page" : 7
+        } ]
+      },
+      "country" : {
+        "status" : "extracted",
+        "value" : "NZ",
+        "confidence" : "medium",
+        "provenance" : [ {
+          "quote" : "Wellington, New Zealand",
+          "start" : 82,
+          "end" : 105,
+          "page" : 1
+        } ],
+        "note" : "Country derived from New Zealand. Computed rather than stated; confidence capped at medium."
+      },
+      "concomitant_drugs" : {
+        "status" : "extracted",
+        "value" : [ "folic acid", "omeprazole", "cilazapril", "paracetamol", "zoledronic acid" ],
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "Folic acid          5 mg once weekly (Thursdays)    Oral    Oct 2025",
+          "start" : 3103,
+          "end" : 3171,
+          "page" : 2
+        }, {
+          "quote" : "Omeprazole          20 mg once daily                Oral    2017",
+          "start" : 3207,
+          "end" : 3271,
+          "page" : 2
+        }, {
+          "quote" : "Cilazapril          2.5 mg once daily               Oral    2008",
+          "start" : 3297,
+          "end" : 3361,
+          "page" : 2
+        }, {
+          "quote" : "Paracetamol         1 g up to four times daily PRN  Oral    2019",
+          "start" : 3385,
+          "end" : 3449,
+          "page" : 2
+        }, {
+          "quote" : "Zoledronic acid     5 mg once yearly                IV      2023",
+          "start" : 3475,
+          "end" : 3539,
+          "page" : 2
+        } ]
+      }
+    }
+  } ]
+}

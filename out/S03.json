@@ -1,0 +1,6 @@
+{
+  "document_id" : "S03",
+  "catalog_version" : "1.0",
+  "flags" : [ "unsupported_format", "Image-only PDF with no text layer; no vision model is configured, so it was not read." ],
+  "cases" : [ ]
+}

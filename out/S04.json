@@ -1,0 +1,178 @@
+{
+  "document_id" : "S04",
+  "catalog_version" : "1.0",
+  "model" : "gemini/gemini-3.5-flash-lite",
+  "flags" : [ ],
+  "cases" : [ {
+    "case_index" : 0,
+    "label" : "A.S.",
+    "fields" : {
+      "patient_initials" : {
+        "status" : "extracted",
+        "value" : "AS",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "initials A.S.",
+          "start" : 294,
+          "end" : 307
+        } ]
+      },
+      "patient_age_years" : {
+        "status" : "extracted",
+        "value" : 54,
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "54-year-old woman",
+          "start" : 275,
+          "end" : 292
+        } ]
+      },
+      "patient_sex" : {
+        "status" : "extracted",
+        "value" : "female",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "54-year-old woman",
+          "start" : 275,
+          "end" : 292
+        } ]
+      },
+      "suspect_drug_name" : {
+        "status" : "extracted",
+        "value" : "amoxicillin",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "amoxicillin 500 mg capsules",
+          "start" : 352,
+          "end" : 379
+        } ]
+      },
+      "suspect_drug_dose_value" : {
+        "status" : "extracted",
+        "value" : 500,
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "amoxicillin 500 mg capsules",
+          "start" : 352,
+          "end" : 379
+        } ]
+      },
+      "suspect_drug_dose_unit" : {
+        "status" : "extracted",
+        "value" : "mg",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "amoxicillin 500 mg capsules",
+          "start" : 352,
+          "end" : 379
+        } ]
+      },
+      "suspect_drug_route" : {
+        "status" : "extracted",
+        "value" : "oral",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "by mouth",
+          "start" : 393,
+          "end" : 401
+        } ]
+      },
+      "suspect_drug_start_date" : {
+        "status" : "extracted",
+        "value" : "2026-05-11",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "on 11 May 2026. She took the first capsule the same evening.",
+          "start" : 478,
+          "end" : 538
+        } ]
+      },
+      "event_terms" : {
+        "status" : "extracted",
+        "value" : [ "rash" ],
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "itchy red rash",
+          "start" : 604,
+          "end" : 618
+        }, {
+          "quote" : "confluent erythematous maculopapular rash",
+          "start" : 684,
+          "end" : 725
+        } ]
+      },
+      "event_onset_date" : {
+        "status" : "extracted",
+        "value" : "2026-05-14",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "On 14 May 2026",
+          "start" : 540,
+          "end" : 554
+        } ]
+      },
+      "event_outcome" : {
+        "status" : "extracted",
+        "value" : "recovered",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "the rash had disappeared completely.",
+          "start" : 1004,
+          "end" : 1040
+        } ]
+      },
+      "seriousness_criteria" : {
+        "status" : "extracted",
+        "value" : [ "none" ],
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "She was not admitted to hospital and did not require any other treatment.",
+          "start" : 1041,
+          "end" : 1114
+        } ]
+      },
+      "reporter_type" : {
+        "status" : "extracted",
+        "value" : "other_hcp",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "I am a dental surgeon",
+          "start" : 142,
+          "end" : 163
+        } ],
+        "note" : "Dentist is classified as other_hcp per guidelines."
+      },
+      "report_date" : {
+        "status" : "extracted",
+        "value" : "2026-05-21",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "Date: 21 May 2026",
+          "start" : 42,
+          "end" : 59
+        } ]
+      },
+      "country" : {
+        "status" : "extracted",
+        "value" : "ES",
+        "confidence" : "medium",
+        "provenance" : [ {
+          "quote" : "Spain",
+          "start" : 35,
+          "end" : 40
+        } ],
+        "note" : "Computed rather than stated; confidence capped at medium."
+      },
+      "concomitant_drugs" : {
+        "status" : "extracted",
+        "value" : [ ],
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "She takes no regular medication.",
+          "start" : 1115,
+          "end" : 1147
+        } ]
+      }
+    }
+  } ]
+}

@@ -1,0 +1,189 @@
+{
+  "document_id" : "S01",
+  "catalog_version" : "1.0",
+  "model" : "gemini/gemini-3.5-flash-lite",
+  "flags" : [ "possible_duplicate" ],
+  "cases" : [ {
+    "case_index" : 0,
+    "label" : "E.W.",
+    "fields" : {
+      "patient_initials" : {
+        "status" : "extracted",
+        "value" : "EW",
+        "confidence" : "medium",
+        "provenance" : [ {
+          "quote" : "Mrs E.W.",
+          "start" : 372,
+          "end" : 380
+        } ],
+        "note" : "Computed rather than stated; confidence capped at medium."
+      },
+      "patient_age_years" : {
+        "status" : "extracted",
+        "value" : 81,
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "81 years old",
+          "start" : 393,
+          "end" : 405
+        } ]
+      },
+      "patient_sex" : {
+        "status" : "extracted",
+        "value" : "female",
+        "confidence" : "medium",
+        "provenance" : [ {
+          "quote" : "Mrs E.W.",
+          "start" : 372,
+          "end" : 380
+        } ],
+        "note" : "Computed rather than stated; confidence capped at medium."
+      },
+      "suspect_drug_name" : {
+        "status" : "extracted",
+        "value" : "digoxin",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "Digoxin",
+          "start" : 164,
+          "end" : 171
+        } ]
+      },
+      "suspect_drug_dose_value" : {
+        "status" : "extracted",
+        "value" : 0.25,
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "digoxin 0.25 mg",
+          "start" : 519,
+          "end" : 534
+        } ]
+      },
+      "suspect_drug_dose_unit" : {
+        "status" : "extracted",
+        "value" : "mg",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "digoxin 0.25 mg",
+          "start" : 519,
+          "end" : 534
+        } ]
+      },
+      "suspect_drug_route" : {
+        "status" : "extracted",
+        "value" : "oral",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "by mouth",
+          "start" : 546,
+          "end" : 554
+        } ]
+      },
+      "suspect_drug_start_date" : {
+        "status" : "extracted",
+        "value" : "2026-01-05",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "started on 5 January 2026.",
+          "start" : 556,
+          "end" : 582
+        } ]
+      },
+      "event_terms" : {
+        "status" : "extracted",
+        "value" : [ "nausea", "dizziness", "bradycardia" ],
+        "confidence" : "medium",
+        "provenance" : [ {
+          "quote" : "nauseous",
+          "start" : 996,
+          "end" : 1004
+        }, {
+          "quote" : "dizzy",
+          "start" : 1009,
+          "end" : 1014
+        }, {
+          "quote" : "pulse was \"very slow\"",
+          "start" : 1043,
+          "end" : 1064
+        } ],
+        "note" : "Mapped from descriptive terms in the text."
+      },
+      "event_onset_date" : {
+        "status" : "extracted",
+        "value" : "2026-02-13",
+        "confidence" : "medium",
+        "provenance" : [ {
+          "quote" : "On 16 February 2026 the patient's daughter came to the pharmacy and told us her mother had been feeling very nauseous and dizzy for three days",
+          "start" : 887,
+          "end" : 1029
+        } ],
+        "note" : "Derived as three days before 16 February 2026."
+      },
+      "event_outcome" : {
+        "status" : "extracted",
+        "value" : "recovered",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "mother is back home and feeling well.",
+          "start" : 1298,
+          "end" : 1335
+        } ]
+      },
+      "seriousness_criteria" : {
+        "status" : "extracted",
+        "value" : [ "hospitalization", "other_medically_important" ],
+        "confidence" : "medium",
+        "provenance" : [ {
+          "quote" : "advised her to go to the emergency department immediately.",
+          "start" : 1118,
+          "end" : 1176
+        } ],
+        "note" : "Emergency department referral and severe bradycardia (HR 41)."
+      },
+      "reporter_type" : {
+        "status" : "extracted",
+        "value" : "pharmacist",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "I am a community pharmacist in Freiburg",
+          "start" : 231,
+          "end" : 270
+        } ]
+      },
+      "report_date" : {
+        "status" : "extracted",
+        "value" : "2026-02-20",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "Date: Fri, 20 Feb 2026 16:42:10 +0100",
+          "start" : 172,
+          "end" : 209
+        } ]
+      },
+      "country" : {
+        "status" : "extracted",
+        "value" : "DE",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "Germany",
+          "start" : 272,
+          "end" : 279
+        } ]
+      },
+      "concomitant_drugs" : {
+        "status" : "extracted",
+        "value" : [ "bisoprolol", "apixaban" ],
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "bisoprolol",
+          "start" : 598,
+          "end" : 608
+        }, {
+          "quote" : "apixaban",
+          "start" : 631,
+          "end" : 639
+        } ]
+      }
+    }
+  } ]
+}
