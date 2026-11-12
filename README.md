@@ -144,5 +144,4 @@ fixtures/               recorded model exchanges, key removed
 out/                    one output per document + duplicates.json
 extract.sh replay.sh start.sh
 NOTES.md                evaluation, decisions, AI use
-CHALLENGES.md           problems met while building it, and the ones to expect when changing it
 ```
